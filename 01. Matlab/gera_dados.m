@@ -162,7 +162,7 @@ DSSLoads = DSSCircuit.Loads;
 % se deseja fazer essa divisão
 % -------------------------------------------------------------------------
 escolhadiv = -1;
-divpoints = obtainDivPoints(DSSElement,barraVmed,elemImed);
+divpoints = obtainDivPoints(DSSCircuit,DSSElement,barraVmed,elemImed);
 if(~isempty(divpoints))
     texto = sprintf('\n\nÉ possível dividir o sistema em %d áreas de medição.\n\n',size(divpoints,2)+1);
     texto = [texto 'Digite 1 para sub-dividir o sistema;\n'];

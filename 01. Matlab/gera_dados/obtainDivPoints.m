@@ -5,7 +5,8 @@
 % 
 % É convencionado que a medição de corrente em um elemento acontece sempre
 % no terminal 2.
-function divpontos = obtainDivPoints(DSSElem,... % Objeto DSSElement, da interface COM
+function divpontos = obtainDivPoints(DSSCirc,... % Objeto DSSCircuit, da interface COM
+                                     DSSElem,... % Objeto DSSElement, da interface COM
                                      barraV,...  % Lista com barras de medição de tensão
                                      elemI)      % Lista com elementos com medição de corrente
 divpontos = {};
